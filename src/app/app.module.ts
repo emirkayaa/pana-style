@@ -4,12 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { TagComponent } from './tag/tag.component';
+import { CollapseComponent } from './collapse/collapse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonsComponent,
-    TagComponent
+    TagComponent,
+    CollapseComponent
   ],
   imports: [
     BrowserModule,

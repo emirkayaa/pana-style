@@ -3,21 +3,20 @@ import { Component, Input } from '@angular/core';
 import { Button } from './button';
 
 @Component({
-  selector: 'app-buttons',
+  selector: 'Button',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.css']
 })
 export class ButtonsComponent {
   @Input() type: string = '';
   @Input() text: string = '';
-  @Input() buttonWidth: string = 'md';
+  @Input() buttonWidth: string = 'lg';
   button: Button = { id: 1, name: '', class: '', type: '',text:''};
   buttonWidths: {[key:string]:string} = {
-    sm:'5%',
-    md:'8%',
-    lg:'12%',
-    xl:'16%',
-
+    sm:'20px',
+    md:'40px',
+    lg:'60px',
+    xl:'80px',
   }
 
   ngOnInit() {

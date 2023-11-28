@@ -1,3 +1,16 @@
-<app-buttons type="danger-outline" text="asdasd"></app-buttons>
-<app-tag type="info-outline" text="sadasd" rounded="sm"></app-tag>
-<router-outlet></router-outlet>
+        <Button type="danger" text="aasdasdas"></Button>
+        <Tag type="danger-outline" text="sadasd" rounded="sm"></Tag>
+        <Collapse [accordionItems]="accordionItems">
+        <!--ngIf ile kullanılması gerekebilir-->
+        <div collapse-content >
+        sdasd
+        </div>
+        <div collapse-content>
+        kaya  
+        </div>
+        <div collapse-content>
+        emir
+        </div>
+
+        </Collapse>
+        <router-outlet></router-outlet>

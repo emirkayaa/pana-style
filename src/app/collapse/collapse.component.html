@@ -1,0 +1,10 @@
+<div>
+    <div *ngFor="let item of accordionItems; let i = index" class="m-1 ">
+        <div class="text-slate-500 p-3 cursor-pointer border-b transition ease-in duration-300" (click)="accordionClick(i)">
+          {{ item.title }}
+        </div>
+        <div *ngIf="index === i" class="p-2 ">
+          <ng-content select="[collapse-content]"></ng-content>
+        </div>
+      </div>
+</div>
